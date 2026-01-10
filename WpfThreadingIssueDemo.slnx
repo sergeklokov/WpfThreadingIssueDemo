@@ -3,4 +3,5 @@
     <File Path="ReadMe.md" />
   </Folder>
   <Project Path="WpfThreadingIssueDemo/WpfThreadingIssueDemo.csproj" />
+  <Project Path="WpfThreadingIssueSilentDemo/WpfThreadingIssueSilentDemo.csproj" />
 </Solution>

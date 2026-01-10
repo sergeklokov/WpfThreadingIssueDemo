@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9285FF42-9188-4E4E-9069-E9BDCCF84741}</ProjectGuid>
+    <ProjectGuid>{E5A73534-D833-4863-98CA-E7922BF768BE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WpfThreadingIssueDemo</RootNamespace>
-    <AssemblyName>WpfThreadingIssueDemo</AssemblyName>
+    <RootNamespace>WpfThreadingIssueSilentDemo</RootNamespace>
+    <AssemblyName>WpfThreadingIssueSilentDemo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Page Include="MainWindowSilent.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,9 +63,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainViewModel.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="MainViewSilentModel.cs" />
+    <Compile Include="MainWindowSilent.xaml.cs">
+      <DependentUpon>MainWindowSilent.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

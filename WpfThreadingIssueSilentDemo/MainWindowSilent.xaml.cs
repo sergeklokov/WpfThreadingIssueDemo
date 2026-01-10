@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfThreadingIssueDemo
+namespace WpfThreadingIssueSilentDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,8 +23,6 @@ namespace WpfThreadingIssueDemo
         public MainWindow()
         {
             InitializeComponent();
-			
-            DataContext = new MainViewModel();
-		}
+        }
     }
 }
