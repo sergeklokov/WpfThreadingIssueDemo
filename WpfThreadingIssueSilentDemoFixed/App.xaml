@@ -1,8 +1,8 @@
-﻿<Application x:Class="WpfThreadingIssueSilentDemo.App"
+﻿<Application x:Class="WpfThreadingIssueSilentDemoFixed.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfThreadingIssueSilentDemo"
-             StartupUri="MainWindowSilent.xaml">
+             xmlns:local="clr-namespace:WpfThreadingIssueSilentDemoFixed"
+             StartupUri="MainWindowSilentFixed.xaml">
     <Application.Resources>
          
     </Application.Resources>

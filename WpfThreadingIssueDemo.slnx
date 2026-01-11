@@ -2,8 +2,10 @@
   <Folder Name="/Solution Items/">
     <File Path="error-01-NotSupportedException.JPG" />
     <File Path="ReadMe.md" />
+    <File Path="ReadMeSilent.md" />
   </Folder>
   <Project Path="WpfThreadingIssueDemo/WpfThreadingIssueDemo.csproj" Id="9285ff42-9188-4e4e-9069-e9bdccf84741" />
   <Project Path="WpfThreadingIssueDemoFixed/WpfThreadingIssueDemoFixed.csproj" />
   <Project Path="WpfThreadingIssueSilentDemo/WpfThreadingIssueSilentDemo.csproj" Id="e5a73534-d833-4863-98ca-e7922bf768be" />
+  <Project Path="WpfThreadingIssueSilentDemoFixed/WpfThreadingIssueSilentDemoFixed.csproj" Id="7365bd0b-b0cf-440d-a6bd-0f8c935235d5" />
 </Solution>

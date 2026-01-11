@@ -13,24 +13,25 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfThreadingIssueSilentDemo
+namespace WpfThreadingIssueSilentDemoFixed
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindowSilent : Window
+    public partial class MainWindowSilentFixed : Window
     {
-        public MainWindowSilent()
+		private readonly MainViewSilentModelFixed _vm;
+		public MainWindowSilentFixed()
         {
             InitializeComponent();
-			//DataContext = new MainViewSilentModel();
 
-			//If you want to guarantee the exception fires as soon as possible, move ViewModel creation to the Loaded event:
-			Loaded += (_, __) => {
-				DataContext = new MainViewSilentModel(); // bindings attach immediately
-            };
-
-
+			_vm = new MainViewSilentModelFixed();   // ✅ UI thread
+			DataContext = _vm;
 		}
-    }
+
+		private async void Reload_Click(object sender, RoutedEventArgs e)
+		{
+			await _vm.LoadItemsAsync();
+		}
+	}
 }
